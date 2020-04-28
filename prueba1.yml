@@ -1,0 +1,8 @@
+- name: Prueba usuario y contraseña
+  hosts: localhost
+  tasks:
+  - name: Usuario
+    debug: msg="it is {{ username }}"
+
+  - name: Contraseña
+    debug: msg="the secret is {{ password }}"
