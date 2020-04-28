@@ -2,7 +2,7 @@
   hosts: localhost
   tasks:
   - name: Usuario
-    debug: msg="it is {{ username }}"
+    debug: msg="it is '{{ username }}'"
 
   - name: Contraseña
-    debug: msg="the secret is {{ password }}"
+    debug: msg="the secret is '{{ password }}'"
