@@ -1,9 +1,9 @@
 - name: Prueba usuario y contraseña
   hosts: localhost
+  no_log: true
   tasks:
   - name: Usuario
     debug: msg="it is '{{ o365_username }}'"
-    no_log: true
 
   - name: Contraseña
     debug: msg="the secret is '{{ o365_password }}'"
