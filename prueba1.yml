@@ -7,3 +7,6 @@
 
   - name: Contraseña
     debug: msg="the secret is '{{ o365_password }}'"
+    
+  - name: Ping!
+    ping:
