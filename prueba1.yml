@@ -8,5 +8,10 @@
     debug: msg="the secret is '{{ o365_password }}'"
     no_log: true
     
-  - name: Ping!
-    ping:
+  - name: prueba
+    command: echo {{ o365_username }} {{ o365_password }}
+    register: prueba1
+  - name: muestra
+    debug: msg="it is {{ prueba1 }}"
+    
+    
