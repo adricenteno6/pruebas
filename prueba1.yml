@@ -1,17 +1,5 @@
 - name: Prueba usuario y contraseña
   hosts: localhost
   tasks:
-  - name: Usuario
-    debug: msg="it is '{{ o365_username }}'"
-
   - name: Contraseña
-    debug: msg="the secret is '{{ o365_password }}'"
-    no_log: true
-    
-  - name: prueba
-    command: echo {{ o365_username }} {{ o365_password }}
-    register: prueba1
-  - name: muestra
-    debug: msg="it is {{ prueba1 }}"
-    
-    
+    debug: msg="the secret is '{{ __ansible_vault }}'"
