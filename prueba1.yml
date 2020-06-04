@@ -1,5 +1,7 @@
 - name: Prueba usuario y contraseña
-  hosts: all
+  hosts: localhost
   tasks:
+  - name: Usuario
+    debug: msg="the secret is '{{ ANSIBLE_NET_USERNAME }}'"
   - name: Contraseña
-    debug: msg="the secret is '{{ __ansible_vault }}'"
+    debug: msg="the secret is '{{ ANSIBLE_NET_PASSWORD }}'"
