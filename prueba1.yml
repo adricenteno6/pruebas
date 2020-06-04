@@ -2,6 +2,6 @@
   hosts: localhost
   tasks:
   - name: Usuario
-    debug: msg="the secret is '{{ ANSIBLE_NET_USERNAME }}'"
+    debug: msg="the secret is '{{ lookup('env','ANSIBLE_NET_USERNAME') }}'"
   - name: Contraseña
-    debug: msg="the secret is '{{ ANSIBLE_NET_PASSWORD }}'"
+    debug: msg="the secret is '{{ lookup('env','ANSIBLE_NET_PASSWORD') }}'"
